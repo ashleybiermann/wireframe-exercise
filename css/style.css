@@ -1,0 +1,109 @@
+/* TODO: float left to right */
+
+* {
+  /* outline: 1px dotted red; */
+  box-sizing: border-box;
+/* tells man bear pig's (margin, border, padding) border and padding to fit inside the width (subtract from the width) */
+}
+
+header {
+  background-color: rgb(85, 85, 85);
+  height: 100px;
+}
+
+nav {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav img {
+  float: left;
+  margin-top: 15px;
+  margin-right: 30px;
+}
+
+nav ul li {
+  float: left;
+  margin-top: 42px;
+  margin-right: 104px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(160, 160, 160); 
+}
+
+main {
+  width: 960px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+/* carrot stands for direct child */
+main > ul {
+  margin-top: 30px;
+  overflow: hidden;
+  /* height: 375px; */
+  /* tells all content, including floats, to be measured to check if it needs to hide them */
+}
+
+main > ul > li {
+  float: left;
+  margin-right: 30px;
+}
+
+main > ul > li:last-child {
+  margin-right: 0px;
+}
+
+main > section {
+  margin-top: 30px;
+}
+
+main > section > img {
+  float: left;
+}
+/* rule for floats is flost the child, and overflow:hidden the parent */
+
+article {
+  float: left;
+  width: 50%;
+  padding-left: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+article > h2 {
+  font-size: 22px;
+}
+
+article p {
+  margin-top: 10px;
+  height: 323px;
+  overflow: auto;
+  line-height: 25px;
+  font-size: 18px;
+  font-style: italic;
+}
+
+button {
+  background: #111;
+  color: #fff;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  padding-top: 8px;
+  padding-right: 30px;
+  padding-bottom: 8px;
+  padding-left: 30px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: purple;
+  transition-delay: 350ms;
+}
+
+footer {
+  background-color: rgb(85, 85, 85);
+  height: 150px;
+  margin-top: 470px;
+}
